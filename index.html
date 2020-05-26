@@ -12,53 +12,53 @@
 <body>
   <div id="app"></div>
 	
-  <script>
+<script>
     window.$docsify = {
-			// coverpage: true,
-			loadSidebar: true,
-			autoHeader: true,
-			subMaxLevel: 4,
-      repo: 'white-j/whitedoc',
-			auto2top: true,
-			// fallbackLanguages: ['fr', 'de'],
-			homepage: 'home.md',	// 入口文件改为 /home.md
-			// logo: './icon.svg',
-			name: 'PM之路(持续更新)',			// name: '<span>docsify</span>',
-			nameLink: '/',
-			noEmoji: true,//禁用 emoji 解析
-			
-			notFoundPage: 'my404.md',
-      search: {
-        maxAge: 86400000,               // 过期时间，单位毫秒，默认一天
-        paths: 'auto',                      // or 'auto'，匹配文件路径
-        placeholder: 'Type to search',  // 搜索提示框文字， 支持本地化，例子在下面
-        // placeholder: {
-        //   '/zh-cn/': '搜索',
-        //   '/': 'Type to search'
-        // },
-        // noData: 'No Results!',          // 找不到结果文字提示，支持本地化，例子在下面
-        noData: {
-          '/': '找不到结果',
-        //   '/': 'No Results'
-        },
-        depth: 2,                       // 搜索标题的最大程级, 1 - 6
-      }
+		// coverpage: true,
+		loadSidebar: true,
+		autoHeader: true,
+		subMaxLevel: 4,
+		repo: 'white-j/whitedoc',
+		auto2top: true,
+		// fallbackLanguages: ['fr', 'de'],
+		homepage: 'home.md',	// 入口文件改为 /home.md
+		// logo: './icon.svg',
+		name: 'PM之路(持续更新)',			// name: '<span>docsify</span>',
+		nameLink: '/whitedoc',
+		noEmoji: true,//禁用 emoji 解析
+		
+		notFoundPage: 'my404.md',
+		search: {
+			maxAge: 86400000,               // 过期时间，单位毫秒，默认一天
+			paths: 'auto',                      // or 'auto'，匹配文件路径
+			placeholder: 'Type to search',  // 搜索提示框文字， 支持本地化，例子在下面
+			// placeholder: {
+			//   '/zh-cn/': '搜索',
+			//   '/': 'Type to search'
+			// },
+			// noData: 'No Results!',          // 找不到结果文字提示，支持本地化，例子在下面
+			noData: {
+				'/': '找不到结果',
+			//   '/': 'No Results'
+			},
+			depth: 2,                       // 搜索标题的最大程级, 1 - 6
+		}
     }
-  </script>
+</script>
   	<script src="./src/docsify.min.js"></script>
 	<script src="./src/search.js"></script>
 
 	<script src="./src/gitalk.min.js"></script>
 	<script src="./src/gitalk.js"></script>
 	<script>
-	  const gitalk = new Gitalk({
-	    clientID: '0827a13db6093161d47f',
-	    clientSecret: 'f2d51f012bf7279bbc46a6f951aa64bfaec33ec9',
-	    repo: 'whitedoc',
-	    owner: 'white-J',
-	    admin: ['white-J'],
-		distractionFreeMode: false
-	  })
+		const gitalk = new Gitalk({
+			clientID: '0827a13db6093161d47f',
+			clientSecret: 'f2d51f012bf7279bbc46a6f951aa64bfaec33ec9',
+			repo: 'whitedoc',
+			owner: 'white-J',
+			admin: ['white-J'],
+			distractionFreeMode: false
+		})
 	</script>
 	
 	<!-- 代码高亮 -->
