@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="./src/vue.min.css">
   <link rel="stylesheet" href="./src/gitalk.css">
+  <style>
+	  .app-sub-sidebar>li::before{content: '';}
+	  .markdown-section>:first-child{text-align: center;}
+	  .markdown-section>h2::before{content: '#';color: #42b983;}
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -17,7 +22,7 @@
 		// coverpage: true,
 		loadSidebar: true,
 		autoHeader: true,
-		subMaxLevel: 4,
+		subMaxLevel: 5,
 		repo: 'white-j/whitedoc',
 		auto2top: true,
 		// fallbackLanguages: ['fr', 'de'],
